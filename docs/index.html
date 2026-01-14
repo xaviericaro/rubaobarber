@@ -62,12 +62,11 @@
   <div class="container fade-in">
     <h3>Serviços</h3>
 
-    <div class="cards">
-      <div class="card">Corte</div>
-      <div class="card">Barba</div>
-      <div class="card">Sobrancelha</div>
-      <div class="card destaque">Combo Premium</div>
-    </div>
+  <div class="cards">
+    <div class="card" data-servico="corte">Corte</div>
+    <div class="card" data-servico="barba">Barba</div>
+    <div class="card" data-servico="sobrancelha">Sobrancelha</div>
+    <div class="card destaque" data-servico="combo">Combo Premium</div>
   </div>
 </section>
 
@@ -91,5 +90,23 @@
 </footer>
 
 <script src="js/main.js"></script>
+
+<!-- MODAL SERVIÇOS -->
+<div class="modal" id="modal-servico">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h3 id="modal-titulo"></h3>
+    <p id="modal-desc"></p>
+    <p id="modal-duracao"></p>
+    <p id="modal-preco"></p>
+
+    <a id="modal-whats" target="_blank" class="btn btn-large">
+      Agendar no WhatsApp
+    </a>
+  </div>
+</div>
+
+
 </body>
 </html>
