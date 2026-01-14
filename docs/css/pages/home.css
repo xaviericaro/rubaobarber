@@ -1,0 +1,6 @@
+.agenda-frame {
+  margin-top: 40px;
+  border: 2px solid var(--gold);
+  border-radius: 6px;
+  overflow: hidden;
+}
