@@ -47,5 +47,5 @@ O site está publicado via **GitHub Pages** e pode ser utilizado como link na bi
 
 ## ✂️ Autor
 
-Projeto desenvolvido por **Ícaro Xavier]**  
+Projeto desenvolvido por **Ícaro Xavier**  
 para a barbearia **Rubão Barber**.
