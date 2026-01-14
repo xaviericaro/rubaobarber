@@ -14,29 +14,29 @@ const servicos = {
   corte: {
     titulo: "Corte Masculino",
     desc: "Corte personalizado, na régua, respeitando seu estilo.",
-    duração: "⏱ 30 minutos",
-    preço: "💰 R$ XX",
+    duracao: "⏱ 30 minutos",
+    preco: "💰 R$ XX",
     msg: "Quero agendar um corte masculino"
   },
   barba: {
     titulo: "Barba",
     desc: "Barba alinhada, desenhada e finalizada na navalha.",
-    duração: "⏱ 20 minutos",
-    preço: "💰 R$ XX",
+    duracao: "⏱ 20 minutos",
+    preco: "💰 R$ XX",
     msg: "Quero agendar uma barba"
   },
   sobrancelha: {
     titulo: "Sobrancelha",
     desc: "Acabamento masculino pra valorizar o visual.",
-    duração: "⏱ 15 minutos",
-    preço: "💰 R$ XX",
+    duracao: "⏱ 15 minutos",
+    preco: "💰 R$ XX",
     msg: "Quero agendar uma sobrancelha"
   },
   combo: {
     titulo: "Combo Premium",
     desc: "Corte + barba + sobrancelha com preço especial.",
-    duração: "⏱ 1 hora",
-    preço: "💰 R$ XX",
+    duracao: "⏱ 1 hora",
+    preco: "💰 R$ XX",
     msg: "Quero agendar o combo premium"
   }
 };
