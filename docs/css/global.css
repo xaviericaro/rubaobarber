@@ -52,6 +52,14 @@ p {
   font-size: 18px;
 }
 
+.btn-agendar-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+
 /* animação */
 .fade-in {
   opacity: 0;
