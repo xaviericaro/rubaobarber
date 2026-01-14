@@ -18,6 +18,7 @@ body {
   background: var(--dark);
 }
 
+/* Tipografia */
 h1, h2, h3 {
   font-family: var(--font-title);
   letter-spacing: 2px;
@@ -33,6 +34,7 @@ p {
   line-height: 1.6;
 }
 
+/* Botões */
 .btn {
   background: var(--gold);
   color: var(--black);
@@ -58,7 +60,6 @@ p {
   right: 20px;
   z-index: 999;
 }
-
 
 /* animação */
 .fade-in {

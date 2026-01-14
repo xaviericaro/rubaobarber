@@ -6,7 +6,7 @@ const agendamentos = JSON.parse(localStorage.getItem("agendamentos")) || [];
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const servico = document.getElementById("servico").value;
+  const servico = document.getElementById("serviço").value;
   const data = document.getElementById("data").value;
   const hora = document.getElementById("hora").value;
 
