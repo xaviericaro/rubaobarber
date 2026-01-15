@@ -22,21 +22,14 @@ const servicos = {
     titulo: "Barba",
     desc: "Barba alinhada, desenhada e finalizada na navalha.",
     duracao: "⏱ 20 minutos",
-    preco: "💰 R$ XX",
+    preco: "💰 R$ 05,00",
     msg: "Quero agendar uma barba"
   },
-  sobrancelha: {
-    titulo: "Sobrancelha",
-    desc: "Acabamento masculino pra valorizar o visual.",
-    duracao: "⏱ 15 minutos",
-    preco: "💰 R$ XX",
-    msg: "Quero agendar uma sobrancelha"
-  },
   combo: {
-    titulo: "Combo Premium",
-    desc: "Corte + barba + sobrancelha com preço especial.",
-    duracao: "⏱ 1 hora",
-    preco: "💰 R$ XX",
+    titulo: "Pigmentação / Tintura",
+    desc: "Pigmentação alinhada, natural e feita no detalhe.",
+    duracao: "⏱ 40 minutos",
+    preco: "💰 R$ 25,00",
     msg: "Quero agendar o combo premium"
   }
 };
