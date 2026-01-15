@@ -15,7 +15,7 @@ const servicos = {
     titulo: "Corte Masculino",
     desc: "Corte personalizado, na régua, respeitando seu estilo.",
     duracao: "⏱ 30 minutos",
-    preco: "💰 R$ XX",
+    preco: "💰 R$ 15,00",
     msg: "Quero agendar um corte masculino"
   },
   barba: {
