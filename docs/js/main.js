@@ -30,7 +30,7 @@ const servicos = {
     desc: "Pigmentação alinhada, natural e feita no detalhe.",
     duracao: "⏱ 40 minutos",
     preco: "💰 R$ 25,00",
-    msg: "Quero agendar o combo premium"
+    msg: "Quero agendar uma pigmentação / tintura"
   }
 };
 
