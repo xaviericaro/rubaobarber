@@ -79,6 +79,14 @@
   background: linear-gradient(145deg, #111, #000);
 }
 
+.location-text {
+  margin: 20px 0 30px;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+
 /* FOOTER */
 .footer {
   background: var(--black);
