@@ -88,7 +88,10 @@
 }
 
 /* mobile */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .hero-slider{
+    transform: translateX(0);
+  }
   .hero-wrapper {
     grid-template-columns: 1fr;
   }
