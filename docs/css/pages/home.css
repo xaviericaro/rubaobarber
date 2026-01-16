@@ -85,7 +85,7 @@
   opacity: 1;
 }
 
-/* HERO ANIMATION */
+/* HERO ANIMAÇÃO */
 .hero-text {
   opacity: 0;
   transform: translateY(20px);
@@ -114,8 +114,7 @@
   }
 }
 
-
-/* mobile */
+/* MEDIA HERO */
 @media (max-width: 768px) {
   .hero {
     height: auto;
@@ -161,7 +160,6 @@
     text-align: center;
   }
 }
-
 
 /* SERVIÇOS */
 .cards {
@@ -232,7 +230,6 @@
   transform: translateY(0);
 }
 
-
 @media (max-width: 768px) {
   .service-card img {
     height: 120px;
@@ -243,14 +240,12 @@
   }
 }
 
-
 .location-text {
   margin: 20px 0 30px;
   font-size: 18px;
   line-height: 1.6;
   opacity: 0.9;
 }
-
 
 /* FOOTER */
 .footer {
@@ -315,11 +310,11 @@
   border-radius: 8px;
 }
 
-/* info */
 .modal-info {
   text-align: left;
 }
 
+/* MODAL RESPONSIVO */
 @media (max-width: 768px) {
 
   .modal {
@@ -372,8 +367,7 @@
   }
 }
 
-
-/* RESPONSIVO */
+/* RESPONSIVIDADE HERO */
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 42px;
@@ -396,5 +390,27 @@
   .card {
     font-size: 20px;
     padding: 30px;
+  }
+}
+
+/* ANIMAÇÃO NO PREÇO */
+.service-price {
+  display: inline-block;
+  font-weight: bold;
+  color: var(--gold);
+  animation: pricePop 0.4s ease;
+}
+
+@keyframes pricePop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
   }
 }
