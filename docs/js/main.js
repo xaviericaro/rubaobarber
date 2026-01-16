@@ -16,21 +16,24 @@ const servicos = {
     desc: "Corte personalizado, na régua, respeitando seu estilo.",
     duracao: "⏱ 30 minutos",
     preco: "💰 R$ 15,00",
-    msg: "Quero agendar um corte masculino"
+    msg: "Quero agendar um corte masculino",
+    img: "images/mendes (corte).jpeg"
   },
   barba: {
     titulo: "Barba",
     desc: "Barba alinhada, desenhada e finalizada na navalha.",
     duracao: "⏱ 20 minutos",
     preco: "💰 R$ 5,00",
-    msg: "Quero agendar uma barba"
+    msg: "Quero agendar uma barba",
+    img: "images/manin.jpeg"
   },
   combo: {
     titulo: "Pigmentação / Tintura",
     desc: "Pigmentação alinhada, natural e feita no detalhe.",
     duracao: "⏱ 40 minutos",
     preco: "💰 R$ 25,00",
-    msg: "Quero agendar uma pigmentação / tintura"
+    msg: "Quero agendar uma pigmentação / tintura",
+    img: "images/trajano.jpeg"
   }
 };
 
