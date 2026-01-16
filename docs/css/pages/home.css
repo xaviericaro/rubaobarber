@@ -69,8 +69,7 @@
   height: 400px;
   overflow: hidden;
   border-radius: 10px;
-  margin-right: -100px;
-  justify-self: end; 
+  justify-self: end;
 }
 
 .hero-slider img {
@@ -89,18 +88,28 @@
 
 /* mobile */
 @media (max-width: 768px) {
-  .hero-slider{
-    transform: translateX(0);
-  }
   .hero-wrapper {
     grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .hero-text {
+    padding-left: 0;
+    text-align: center;
   }
 
   .hero-slider {
-    height: 250px;
-    margin-top: 30px;
+    margin: 30px auto 0;
+    height: 260px;
+    max-width: 320px;
+    justify-self: center;
+  }
+
+  .hero-slider img {
+    border-radius: 12px;
   }
 }
+
 
 /* SOBRE */
 .sobre-wrapper {
