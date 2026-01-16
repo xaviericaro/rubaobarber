@@ -274,3 +274,55 @@
     padding: 30px;
   }
 }
+
+/* ===== MODAL MOBILE AJUSTADO ===== */
+@media (max-width: 768px) {
+
+  .modal-content.modal-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 18px;
+    width: 92%;
+    max-width: 360px;
+  }
+
+  .modal-image {
+    width: 100%;
+  }
+
+  .modal-image img {
+    width: 100%;
+    max-height: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .modal-info {
+    text-align: left;
+  }
+
+  .modal-info h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .modal-info p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  #modal-whats {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    margin-top: 14px;
+    text-align: center;
+  }
+
+  .close {
+    top: 12px;
+    right: 14px;
+    font-size: 24px;
+  }
+}
