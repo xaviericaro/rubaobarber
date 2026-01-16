@@ -1,3 +1,4 @@
+/* FADE IN */
 const elements = document.querySelectorAll('.fade-in');
 
 const observer = new IntersectionObserver(entries => {
@@ -10,6 +11,7 @@ const observer = new IntersectionObserver(entries => {
 
 elements.forEach(el => observer.observe(el));
 
+/* SERVIÇOS */
 const servicos = {
   corte: {
     titulo: "Corte Masculino",
@@ -25,7 +27,7 @@ const servicos = {
     duracao: "⏱ 20 minutos",
     preco: "💰 R$ 5,00",
     msg: "Quero agendar uma barba",
-    img: "images/manin.jpeg"
+    img: "images/barba.png"
   },
   combo: {
     titulo: "Pigmentação / Tintura",
@@ -37,15 +39,18 @@ const servicos = {
   }
 };
 
+/* MODAL */
 const modal = document.getElementById("modal-servico");
 const titulo = document.getElementById("modal-titulo");
 const desc = document.getElementById("modal-desc");
 const duracao = document.getElementById("modal-duracao");
 const preco = document.getElementById("modal-preco");
+const modalImg = document.getElementById("modal-img");
 const whats = document.getElementById("modal-whats");
 const close = document.querySelector(".close");
 
-document.querySelectorAll(".card").forEach(card => {
+/* CLICK NOS SERVIÇOS */
+document.querySelectorAll(".service-card").forEach(card => {
   card.addEventListener("click", () => {
     const data = servicos[card.dataset.servico];
 
@@ -54,12 +59,16 @@ document.querySelectorAll(".card").forEach(card => {
     duracao.textContent = data.duracao;
     preco.textContent = data.preco;
 
+    modalImg.src = data.img;
+    modalImg.alt = data.titulo;
+
     whats.href = `https://wa.me/553191115850?text=${encodeURIComponent(data.msg)}`;
 
     modal.style.display = "flex";
   });
 });
 
+/* FECHAR MODAL */
 close.addEventListener("click", () => {
   modal.style.display = "none";
 });
@@ -68,6 +77,7 @@ modal.addEventListener("click", e => {
   if (e.target === modal) modal.style.display = "none";
 });
 
+/* SLIDER HERO */
 const slides = document.querySelectorAll(".hero-slider img");
 let index = 0;
 
