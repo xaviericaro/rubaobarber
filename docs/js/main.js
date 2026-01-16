@@ -22,7 +22,7 @@ const servicos = {
     titulo: "Barba",
     desc: "Barba alinhada, desenhada e finalizada na navalha.",
     duracao: "⏱ 20 minutos",
-    preco: "💰 R$ 05,00",
+    preco: "💰 R$ 5,00",
     msg: "Quero agendar uma barba"
   },
   combo: {
@@ -64,3 +64,12 @@ close.addEventListener("click", () => {
 modal.addEventListener("click", e => {
   if (e.target === modal) modal.style.display = "none";
 });
+
+const slides = document.querySelectorAll(".hero-slider img");
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 3500);
