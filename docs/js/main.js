@@ -75,7 +75,7 @@ document.querySelectorAll(".service-card").forEach(card => {
     desc.textContent = data.desc;
     duracao.textContent = data.duracao;
 
-    // MICRO ANIMAÇÃO NO PREÇO
+    // ANIMAÇÃO NO PREÇO
     preco.innerHTML = '';
     void preco.offsetWidth; 
     preco.innerHTML = `💰 <span class="service-price">${data.preco}</span>`;
@@ -105,7 +105,6 @@ modal.addEventListener("click", e => {
     modal.classList.remove("active");
   }
 });
-
 
 /* SLIDER HERO */
 const slides = document.querySelectorAll(".hero-slider img");
