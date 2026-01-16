@@ -11,6 +11,20 @@ const observer = new IntersectionObserver(entries => {
 
 elements.forEach(el => observer.observe(el));
 
+// ANIMAÇÃO DOS CARDS DE SERVIÇO
+const serviceCards = document.querySelectorAll('.service-card');
+
+const serviceObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+serviceCards.forEach(card => serviceObserver.observe(card));
+
+
 /* SERVIÇOS */
 const servicos = {
   corte: {

@@ -203,6 +203,36 @@
   font-size: 20px;
 }
 
+.service-card {
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: var(--gold);
+}
+
+.service-card img {
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ANIMAÇÃO DE ENTRADA DOS SERVIÇOS */
+.service-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.service-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 @media (max-width: 768px) {
   .service-card img {
     height: 120px;
