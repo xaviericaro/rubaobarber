@@ -86,3 +86,20 @@ setInterval(() => {
   index = (index + 1) % slides.length;
   slides[index].classList.add("active");
 }, 3500);
+
+// SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
