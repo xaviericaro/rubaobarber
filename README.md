@@ -2,11 +2,11 @@
 
 Site institucional da **Rubão Barber**, desenvolvido para divulgação dos serviços, fortalecimento da marca e facilitação de agendamentos via WhatsApp (e futuramente SimplyBook).
 
-👉 Projeto focado em **simplicidade, identidade visual e conversão**.
+-> Projeto focado em **simplicidade, identidade visual e conversão**.
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Site one-page responsivo
 - Seção **Sobre** integrada à home
@@ -17,7 +17,7 @@ Site institucional da **Rubão Barber**, desenvolvido para divulgação dos serv
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - HTML5
 - CSS3 (estrutura modular)
@@ -30,13 +30,13 @@ Site institucional da **Rubão Barber**, desenvolvido para divulgação dos serv
 
 ---
 
-## 🌐 Deploy
+## Deploy
 
 O site está publicado via **GitHub Pages** e pode ser utilizado como link na bio do Instagram da barbearia.
 
 ---
 
-## 📌 Próximos Passos
+## Próximos Passos
 
 - Integração com SimplyBook
 - Inclusão de imagens reais dos serviços
@@ -45,7 +45,7 @@ O site está publicado via **GitHub Pages** e pode ser utilizado como link na bi
 
 ---
 
-## ✂️ Autor
+## Autor
 
 Projeto desenvolvido por **Ícaro Xavier**  
 para a barbearia **Rubão Barber**.
