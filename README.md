@@ -33,7 +33,7 @@ Site institucional da **Rubão Barber**, desenvolvido para divulgação dos serv
 ## Deploy
 
 O site está publicado via **GitHub Pages** e também está hospedado em:
-https://rubaoobarber.netlify.app
+https://rubaobarber.netlify.app
 
 ---
 
