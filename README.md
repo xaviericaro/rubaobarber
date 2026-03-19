@@ -32,7 +32,8 @@ Site institucional da **Rubão Barber**, desenvolvido para divulgação dos serv
 
 ## Deploy
 
-O site está publicado via **GitHub Pages** e pode ser utilizado como link na bio do Instagram da barbearia.
+O site está publicado via **GitHub Pages** e também está hospedado em:
+https://rubaoobarber.netlify.app
 
 ---
 
