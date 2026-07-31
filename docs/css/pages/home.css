@@ -41,7 +41,6 @@
   padding: 0 24px;
 }
 
-
 .hero h2 {
   font-size: 64px;
   margin-bottom: 20px;
@@ -69,8 +68,7 @@
   height: 400px;
   overflow: hidden;
   border-radius: 10px;
-  margin-right: -150px;
-  justify-self: end; 
+  justify-self: end;
 }
 
 .hero-slider img {
@@ -87,15 +85,58 @@
   opacity: 1;
 }
 
-/* mobile */
-@media (max-width: 900px) {
+/* HERO ANIMAÇÃO */
+.hero-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroFadeUp 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.hero-slider {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: heroFadeLeft 1.2s ease forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes heroFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFadeLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* MEDIA HERO */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+
   .hero-wrapper {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-text {
+    padding-left: 0;
+    text-align: center;
   }
 
   .hero-slider {
-    height: 250px;
-    margin-top: 30px;
+    width: 100%;
+    max-width: 320px;
+    height: 240px;
+    margin: 0 auto;
+    justify-self: center;
   }
 }
 
@@ -119,7 +160,6 @@
     text-align: center;
   }
 }
-
 
 /* SERVIÇOS */
 .cards {
@@ -161,13 +201,51 @@
   font-size: 20px;
 }
 
+.service-card {
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: var(--gold);
+}
+
+.service-card img {
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ANIMAÇÃO DE ENTRADA DOS SERVIÇOS */
+.service-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.service-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .service-card img {
+    height: 120px;
+  }
+
+  .service-card h4 {
+    font-size: 18px;
+  }
+}
+
 .location-text {
   margin: 20px 0 30px;
   font-size: 18px;
   line-height: 1.6;
   opacity: 0.9;
 }
-
 
 /* FOOTER */
 .footer {
@@ -232,12 +310,64 @@
   border-radius: 8px;
 }
 
-/* info */
 .modal-info {
   text-align: left;
 }
 
-/* RESPONSIVO */
+/* MODAL RESPONSIVO */
+@media (max-width: 768px) {
+
+  .modal {
+    padding: 20px;
+  }
+
+  .modal-content.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 16px;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .modal-image img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .modal-info {
+    text-align: left;
+  }
+
+  .modal-info h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .modal-info p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  #modal-whats {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .close {
+    top: 10px;
+    right: 12px;
+    font-size: 22px;
+  }
+}
+
+/* RESPONSIVIDADE HERO */
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 42px;
@@ -260,5 +390,27 @@
   .card {
     font-size: 20px;
     padding: 30px;
+  }
+}
+
+/* ANIMAÇÃO NO PREÇO */
+.service-price {
+  display: inline-block;
+  font-weight: bold;
+  color: var(--gold);
+  animation: pricePop 0.4s ease;
+}
+
+@keyframes pricePop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
   }
 }
