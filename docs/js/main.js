@@ -34,7 +34,7 @@ const servicos = {
     duracao: "⏱ 30 minutos",
     preco: "R$ 15,00",
     msg: "Quero agendar um corte masculino",
-    img: "images/mendes (corte).jpeg"
+    img: "images/mendes (corte).jpg"
   },
   barba: {
     titulo: "Barba",
@@ -42,7 +42,7 @@ const servicos = {
     duracao: "⏱ 20 minutos",
     preco: "R$ 5,00",
     msg: "Quero agendar uma barba",
-    img: "images/barba.png"
+    img: "images/barba.jpg"
   },
   combo: {
     titulo: "Pigmentação / Tintura",
@@ -50,7 +50,7 @@ const servicos = {
     duracao: "⏱ 40 minutos",
     preco: "R$ 25,00",
     msg: "Quero agendar uma pigmentação / tintura",
-    img: "images/trajano.jpeg"
+    img: "images/trajano.jpg"
   }
 };
 

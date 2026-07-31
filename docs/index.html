@@ -49,10 +49,22 @@
     </div>
 
     <div class="hero-slider">
-      <img src="images/corte1.png" class="active">
-      <img src="images/corte2.png">
-      <img src="images/mendes (corte).jpeg">
-      <img src="images/Muca (cortando).jpeg">
+      <picture>
+        <source srcset="images/corte1.webp" type="image/webp">
+        <img src="images/corte1.jpg" class="active" alt="Corte masculino degradê feito na Rubão Barber">
+      </picture>
+      <picture>
+        <source srcset="images/corte2.webp" type="image/webp">
+        <img src="images/corte2.jpg" alt="Acabamento de corte masculino na Rubão Barber">
+      </picture>
+      <picture>
+        <source srcset="images/mendes (corte).webp" type="image/webp">
+        <img src="images/mendes (corte).jpg" alt="Cliente com corte finalizado na Rubão Barber">
+      </picture>
+      <picture>
+        <source srcset="images/Muca (cortando).webp" type="image/webp">
+        <img src="images/Muca (cortando).jpg" alt="Rubão cortando cabelo de cliente na barbearia">
+      </picture>
     </div>
 
   </div>
@@ -63,7 +75,10 @@
 <section class="section" id="sobre">
   <div class="container fade-in sobre-wrapper">
 
-    <img src="images/sobre.jpeg" alt="Rubão Barber">
+    <picture>
+      <source srcset="images/sobre.webp" type="image/webp">
+      <img src="images/sobre.jpg" alt="Rubão Barber">
+    </picture>
 
     <h3>Quem é o Rubão?</h3>
     <p>
@@ -75,6 +90,30 @@
 
 <section class="section dark" id="servicos">
   <div class="cards">
+<<<<<<< HEAD
+  <div class="card service-card" data-servico="corte">
+    <picture>
+      <source srcset="images/mendes (corte).webp" type="image/webp">
+      <img src="images/mendes (corte).jpg" alt="Corte Masculino">
+    </picture>
+    <h4>Corte Masculino</h4>
+  </div>
+
+  <div class="card service-card" data-servico="barba">
+    <picture>
+      <source srcset="images/manin.webp" type="image/webp">
+      <img src="images/manin.jpg" alt="Barba">
+    </picture>
+    <h4>Barba</h4>
+  </div>
+
+  <div class="card service-card destaque" data-servico="combo">
+    <picture>
+      <source srcset="images/trajano.webp" type="image/webp">
+      <img src="images/trajano.jpg" alt="Pigmentação / Tintura">
+    </picture>
+    <h4>Pigmentação / Tintura</h4>
+=======
 
     <div class="card service-card" data-servico="corte">
       <img src="images/corte.png" alt="Corte Masculino">
@@ -91,6 +130,7 @@
       <h4>Pigmentação / Tintura</h4>
     </div>
 
+>>>>>>> c3ccb5b3b1ef93b049208fc1912bf1eff9c4ef09
   </div>
 </section>
 
