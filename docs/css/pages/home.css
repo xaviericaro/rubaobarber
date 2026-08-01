@@ -96,6 +96,8 @@
   .hero-slider {
     height: 250px;
     margin-top: 30px;
+    margin-right: 0;
+    justify-self: stretch;
   }
 }
 
