@@ -38,6 +38,7 @@ const servicos = {
 };
 
 const modal = document.getElementById("modal-servico");
+const modalImg = document.getElementById("modal-img");
 const titulo = document.getElementById("modal-titulo");
 const desc = document.getElementById("modal-desc");
 const duracao = document.getElementById("modal-duracao");
@@ -53,6 +54,9 @@ document.querySelectorAll(".card").forEach(card => {
     desc.textContent = data.desc;
     duracao.textContent = data.duracao;
     preco.textContent = data.preco;
+
+    modalImg.src = data.img;
+    modalImg.alt = data.titulo;
 
     whats.href = `https://wa.me/553191115850?text=${encodeURIComponent(data.msg)}`;
 
