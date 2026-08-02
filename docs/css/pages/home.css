@@ -168,7 +168,10 @@
   display: block;
 }
 
-.service-card[data-servico="barba"] img,
+.service-card[data-servico="barba"] img {
+  object-position: center 75%;
+}
+
 .service-card[data-servico="combo"] img {
   object-position: center 15%;
 }
