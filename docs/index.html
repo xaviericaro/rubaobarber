@@ -10,6 +10,7 @@
   <meta name="description" content="Rubão Barber - corte masculino, barba e sobrancelha com estilo e precisão.">
   <meta name="keywords" content="barbearia, corte masculino, barba, sobrancelha, Rubão Barber">
 
+  <!-- Open Graph / preview ao compartilhar o link -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Rubão Barber">
@@ -25,6 +26,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
+  <!-- Dados estruturados / SEO local -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -59,7 +61,6 @@
 </header>
 
 <section class="hero">
-  <section class="hero">
   <div class="hero-wrapper fade-in">
 
     <div class="hero-text">
@@ -78,7 +79,7 @@
     <div class="hero-slider">
       <picture>
         <source srcset="images/corte1.webp" type="image/webp">
-        <img src="images/corte1.jpg" class="active" alt="Corte masculino degradê feito na Rubão Barber">
+        <img src="images/corte1.jpg" class="active" alt="Corte masculino degradê feito na Rubão Barber" fetchpriority="high">
       </picture>
       <picture>
         <source srcset="images/corte2.webp" type="image/webp">
@@ -97,14 +98,12 @@
   </div>
 </section>
 
-</section>
-
 <section class="section" id="sobre">
   <div class="container fade-in sobre-wrapper">
 
     <picture>
       <source srcset="images/sobre.webp" type="image/webp">
-      <img src="images/sobre.jpg" alt="Rubão Barber">
+      <img src="images/sobre.jpg" alt="Rubão Barber" loading="lazy">
     </picture>
 
     <h3>Quem é o Rubão?</h3>
@@ -120,7 +119,7 @@
   <div class="card service-card" data-servico="corte">
     <picture>
       <source srcset="images/mendes (corte).webp" type="image/webp">
-      <img src="images/mendes (corte).jpg" alt="Corte Masculino">
+      <img src="images/mendes (corte).jpg" alt="Corte Masculino" loading="lazy">
     </picture>
     <h4>Corte Masculino</h4>
   </div>
@@ -128,7 +127,7 @@
   <div class="card service-card" data-servico="barba">
     <picture>
       <source srcset="images/manin.webp" type="image/webp">
-      <img src="images/manin.jpg" alt="Barba">
+      <img src="images/manin.jpg" alt="Barba" loading="lazy">
     </picture>
     <h4>Barba</h4>
   </div>
@@ -136,7 +135,7 @@
   <div class="card service-card destaque" data-servico="combo">
     <picture>
       <source srcset="images/trajano.webp" type="image/webp">
-      <img src="images/trajano.jpg" alt="Pigmentação / Tintura">
+      <img src="images/trajano.jpg" alt="Pigmentação / Tintura" loading="lazy">
     </picture>
     <h4>Pigmentação / Tintura</h4>
   </div>
@@ -158,6 +157,7 @@
   </div>
 </section>
 
+<!-- LOCALIZAÇÃO -->
 <section class="section dark" id="localizacao">
   <div class="container fade-in">
     <h3>Onde estamos</h3>
@@ -181,6 +181,7 @@
   <p>© 2026 Rubão Barber • Estilo não se discute</p>
 </footer>
 
+<!-- MODAL SERVIÇOS -->
 <div class="modal" id="modal-servico">
   <div class="modal-content modal-grid">
     <span class="close">&times;</span>
